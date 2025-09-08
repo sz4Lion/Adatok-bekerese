@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="adatok.js" defer></script>
+    <title>Adatok bekérése</title>
+
+    <style>
+        div{
+            margin: 5px;
+        }
+        p{
+            width: 200px;
+            margin-left: 10px;
+        }
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div><p>Név:</p> <input type="text" style="margin-left: 10px;" id="nev" placeholder="Példa Péter"></div>
+    <div><p>Település:</p> <input type="text" style="margin-left: 10px;" id="telep" placeholder="Budapest"></div>
+    <div><p>Irányítószám:</p> <input type="text" style="margin-left: 10px;" id="isz" placeholder="1234"></div>
+    <div><p>Közterület neve és típusa:</p> <input type="text" style="margin-left: 10px;" id="kozt" placeholder="Valami utca"></div>
+    <div><p>Házszám:</p> <input type="text" style="margin-left: 10px;" id="hsz" placeholder="12"></div>
+
+    <div>
+        <button style="padding: 5px; margin-top: 20px; margin-left: 10px;" onclick="bevitel()">Adatok bevitele</button>
+    </div>
+
+    <div id="kartya" style="width: 200px; height: 20px; background-color: lightblue;"></div>
+</body>
+</html>
